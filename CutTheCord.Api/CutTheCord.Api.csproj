@@ -84,11 +84,19 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -239,7 +247,20 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DAL\Models\SearchCountry.cs" />
+    <Compile Include="DAL\Models\SearchCountry2.cs" />
+    <Compile Include="DAL\Models\SearchExternals.cs" />
+    <Compile Include="DAL\Models\SearchLinks.cs" />
+    <Compile Include="DAL\Models\SearchNextEpisode.cs" />
+    <Compile Include="DAL\Models\SearchPreviousEpisode.cs" />
+    <Compile Include="DAL\Models\SearchRating.cs" />
+    <Compile Include="DAL\Models\SearchSchedule.cs" />
+    <Compile Include="DAL\Models\SearchSelf.cs" />
+    <Compile Include="DAL\Models\SearchShow.cs" />
+    <Compile Include="DAL\Models\SearchWebChannel.cs" />
+    <Compile Include="DAL\searchRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -247,12 +268,19 @@
     <Compile Include="Migrations\201706132339507_initial.Designer.cs">
       <DependentUpon>201706132339507_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706171506005_June17.cs" />
+    <Compile Include="Migrations\201706171506005_June17.Designer.cs">
+      <DependentUpon>201706171506005_June17.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Member.cs" />
     <Compile Include="Models\Show.cs" />
+    <Compile Include="DAL\Models\SearchImage.cs" />
+    <Compile Include="DAL\Models\SearchNetwork.cs" />
+    <Compile Include="DAL\Models\SearchReturn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -267,6 +295,7 @@
     <Content Include="app\factories\ShowFactory.js" />
     <Content Include="app\partials\Home.html" />
     <Content Include="app\partials\Login.html" />
+    <Content Include="app\partials\Search.html" />
     <Content Include="app\partials\SignUp.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
@@ -331,7 +360,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DAL\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -344,6 +372,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201706132339507_initial.resx">
       <DependentUpon>201706132339507_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706171506005_June17.resx">
+      <DependentUpon>201706171506005_June17.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

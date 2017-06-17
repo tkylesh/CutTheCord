@@ -12,9 +12,7 @@ namespace CutTheCord.Api.Models
         public int Id { get; set; }
 
         public string Title { get; set; }
-        public DateTime PremierDate { get; set; }
-
-        public DateTime? EndDate { get; set; }
+        public string PremierDate { get; set; }
 
         public string Status { get; set; }
 

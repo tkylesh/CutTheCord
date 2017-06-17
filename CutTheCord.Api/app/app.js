@@ -3,7 +3,7 @@
 var app = angular.module('todo', ['ngRoute']);
 
 app
-    .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+    .config(['$routeProvider', '$locationProvider', '$sce', function ($routeProvider, $locationProvider, $sce) {
 
         $routeProvider
         .when("/",
@@ -20,7 +20,13 @@ app
         {
             templateUrl: "app/partials/SignUp.html",
             controller: "signupController"
-        });
+        })
+        .when("/search",
+        {
+            templateUrl: "app/partials/Search.html",
+            controller: "searchController"
+        })
+        $sce.trustAsResourceUrl('http://api.tvmaze.com/search/shows?q=girls');
 
     }]);
 
