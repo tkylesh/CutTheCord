@@ -292,7 +292,6 @@
     <Content Include="app\controllers\loginController.js" />
     <Content Include="app\controllers\searchController.js" />
     <Content Include="app\controllers\signupController.js" />
-    <Content Include="app\factories\ShowFactory.js" />
     <Content Include="app\partials\Home.html" />
     <Content Include="app\partials\Login.html" />
     <Content Include="app\partials\Search.html" />
