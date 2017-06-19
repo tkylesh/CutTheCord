@@ -277,6 +277,10 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\Network.cs" />
+    <Compile Include="Models\Rating.cs" />
+    <Compile Include="Models\Schedule.cs" />
+    <Compile Include="Models\WebChannel.cs" />
     <Compile Include="Models\Show.cs" />
     <Compile Include="DAL\Models\SearchImage.cs" />
     <Compile Include="DAL\Models\SearchNetwork.cs" />

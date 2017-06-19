@@ -25,9 +25,22 @@ namespace CutTheCord.Api.DAL
                 var s = new Show
 
                 {
-                    Title = item.show.name,
-                    PremierDate = item.show.premiered,
-                    Status = item.show.status
+                    url = item.show.url,
+                    name = item.show.name,
+                    type = item.show.type,
+                    genres = item.show.genres,
+                    status = item.show.status,
+                    runtime = item.show.runtime,
+                    premiered = item.show.premiered,
+                    officialSite = item.show.officialSite,
+                    schedule = item.show.schedule,
+                    rating = item.show.rating,
+                    network = item.show.network,
+                    webChannel = item.show.webChannel,
+                    image = item.show.image.imageUrl,
+                    summary = item.show.summary,
+                    updated = item.show.updated,
+
                 };
 
                 yield return s;
