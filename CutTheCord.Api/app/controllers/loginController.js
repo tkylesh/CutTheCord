@@ -15,6 +15,7 @@
             .then(function (result) {
                 console.log("result=", result);
 
+                sessionStorage.setItem('user', $scope.username);
                 sessionStorage.setItem('token', result.data.access_token);
                 $http.defaults.headers.common['Authorization'] = `bearer ${result.data.access_token}`;
 

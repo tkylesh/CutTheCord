@@ -37,5 +37,12 @@ namespace CutTheCord.Api.DAL
                 return false;
             }
         }
+
+        public Member getMember(string email)
+        {
+            return _context.Members.Where(u => u.Email == email).FirstOrDefault();
+
+        }
+
     }
 }
