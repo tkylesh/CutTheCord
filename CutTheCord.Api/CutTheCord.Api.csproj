@@ -249,8 +249,10 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MemberController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\ShowController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DAL\memberRepository.cs" />
+    <Compile Include="DAL\Models\AddShowRequest.cs" />
     <Compile Include="DAL\Models\SearchCountry.cs" />
     <Compile Include="DAL\Models\SearchCountry2.cs" />
     <Compile Include="DAL\Models\SearchExternals.cs" />
@@ -263,6 +265,7 @@
     <Compile Include="DAL\Models\SearchShow.cs" />
     <Compile Include="DAL\Models\SearchWebChannel.cs" />
     <Compile Include="DAL\searchRepository.cs" />
+    <Compile Include="DAL\showRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

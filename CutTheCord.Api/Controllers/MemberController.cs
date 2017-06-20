@@ -24,5 +24,12 @@ namespace CutTheCord.Api.Controllers
         {
             return _memberRepo.addMember(member);
         }
+
+        [Route("api/member")]
+        [HttpGet]
+        public Member Get(string email)
+        {
+            return _memberRepo.getMember(email);
+        }
     }
 }
