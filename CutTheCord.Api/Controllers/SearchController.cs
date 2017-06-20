@@ -1,4 +1,5 @@
 ﻿using CutTheCord.Api.DAL;
+using CutTheCord.Api.DAL.Models;
 using CutTheCord.Api.Models;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace CutTheCord.Api.Controllers
 
         [Route("api/search")]
         [HttpGet]
-        public IEnumerable<Show> search()
+        public IEnumerable<SearchShow> search()
         {
              return _searchRepository.searchShows().ToList();
         }
