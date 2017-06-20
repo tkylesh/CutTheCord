@@ -15,15 +15,8 @@ namespace CutTheCord.Api.Models
         public string type { get; set; }
         public string status { get; set; }
         public string premiered { get; set; }
-        private string _officialSite;
-        public string officialSite
-        {
-            get { return _officialSite;  }
-            set { _officialSite = value ?? string.Empty; }
-        }
         public string image { get; set; }
         public string summary { get; set; }
-        public int updated { get; set; }
 
         public virtual ICollection<Member> Members { get; set; }
     }
