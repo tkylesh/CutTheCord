@@ -9,14 +9,21 @@ namespace CutTheCord.Api.Models
     public class Show
     {
         [Key]
-        public int Id { get; set; }
-
-        public string Title { get; set; }
-        public DateTime PremierDate { get; set; }
-
-        public DateTime? EndDate { get; set; }
-
-        public string Status { get; set; }
+        public int id { get; set; }
+        public string url { get; set; }
+        public string name { get; set; }
+        public string type { get; set; }
+        public string status { get; set; }
+        public string premiered { get; set; }
+        private string _officialSite;
+        public string officialSite
+        {
+            get { return _officialSite;  }
+            set { _officialSite = value ?? string.Empty; }
+        }
+        public string image { get; set; }
+        public string summary { get; set; }
+        public int updated { get; set; }
 
         public virtual ICollection<Member> Members { get; set; }
     }

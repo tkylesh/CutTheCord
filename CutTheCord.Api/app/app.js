@@ -20,6 +20,11 @@ app
         {
             templateUrl: "app/partials/SignUp.html",
             controller: "signupController"
+        })
+        .when("/search",
+        {
+            templateUrl: "app/partials/Search.html",
+            controller: "searchController"
         });
 
     }]);
