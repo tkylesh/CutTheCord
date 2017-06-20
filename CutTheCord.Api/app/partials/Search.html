@@ -1,1 +1,23 @@
-﻿{{shows}}
+﻿<div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for ..." ng-model="searchText">
+            <span class="input-group-btn">
+                <button class="btn btn-default" ng-click="search()"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </div>
+</div>
+<br />
+<hr />
+<br />
+<h3>Search Results</h3>
+<div ng-repeat="show in showList">
+    <div class="panel panel-default col-xs-4">
+        <div class="panel-heading">{{show.name}}</div>
+        <div class="panel-body">
+            <div></div>
+        </div>
+    </div>
+</div>
+<br />

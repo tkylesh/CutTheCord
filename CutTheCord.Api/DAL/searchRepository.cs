@@ -11,9 +11,9 @@ namespace CutTheCord.Api.DAL
 {
     public class searchRepository
     {
-        public IEnumerable<SearchShow> searchShows()
+        public IEnumerable<SearchShow> searchShows(string query)
         {
-            var client = new RestClient("http://api.tvmaze.com/search/shows?q=girls");
+            var client = new RestClient($"http://api.tvmaze.com/search/shows?q={query}");
             var request = new RestRequest(Method.GET);
 
             var restResponse = client.Execute<List<SearchReturn>>(request);

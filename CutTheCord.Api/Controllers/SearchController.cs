@@ -19,11 +19,11 @@ namespace CutTheCord.Api.Controllers
             _searchRepository = new searchRepository();
         }
 
-        [Route("api/search")]
+        [Route("api/search/{query}")]
         [HttpGet]
-        public IEnumerable<SearchShow> search()
+        public IEnumerable<SearchShow> search(string query)
         {
-             return _searchRepository.searchShows().ToList();
+             return _searchRepository.searchShows(query).ToList();
         }
     }
 }
