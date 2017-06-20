@@ -247,8 +247,10 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MemberController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DAL\memberRepository.cs" />
     <Compile Include="DAL\Models\SearchCountry.cs" />
     <Compile Include="DAL\Models\SearchCountry2.cs" />
     <Compile Include="DAL\Models\SearchExternals.cs" />
@@ -272,15 +274,19 @@
     <Compile Include="Migrations\201706171506005_June17.Designer.cs">
       <DependentUpon>201706171506005_June17.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706201736186_June20.cs" />
+    <Compile Include="Migrations\201706201736186_June20.Designer.cs">
+      <DependentUpon>201706201736186_June20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706201826218_June20_MemberEmail.cs" />
+    <Compile Include="Migrations\201706201826218_June20_MemberEmail.Designer.cs">
+      <DependentUpon>201706201826218_June20_MemberEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Member.cs" />
-    <Compile Include="Models\Network.cs" />
-    <Compile Include="Models\Rating.cs" />
-    <Compile Include="Models\Schedule.cs" />
-    <Compile Include="Models\WebChannel.cs" />
     <Compile Include="Models\Show.cs" />
     <Compile Include="DAL\Models\SearchImage.cs" />
     <Compile Include="DAL\Models\SearchNetwork.cs" />
@@ -389,6 +395,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706171506005_June17.resx">
       <DependentUpon>201706171506005_June17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706201736186_June20.resx">
+      <DependentUpon>201706201736186_June20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706201826218_June20_MemberEmail.resx">
+      <DependentUpon>201706201826218_June20_MemberEmail.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

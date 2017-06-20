@@ -2,6 +2,8 @@
     $scope.values = [];
     $scope.username = "";
     $scope.password = "";
+    $scope.FirstName = "";
+    $scope.LastName = "";
     $scope.confirmPassword = "";
 
     $scope.signup = function () {
@@ -19,6 +21,17 @@
         })
             .then(function (result) {
                 console.log("result=", result);
+
+                $http.post('api/member',
+                    {
+                        "FirstName": $scope.FirstName,
+                        "LastName": $scope.LastName,
+                        "Email": $scope.username,
+                    }).then((result) =>
+                    {
+                        console.log("addMember: ", result);
+                    });
+
                 $location.path("/home");
             });
     }
