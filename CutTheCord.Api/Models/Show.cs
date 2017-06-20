@@ -15,6 +15,7 @@ namespace CutTheCord.Api.Models
         public string type { get; set; }
         public string status { get; set; }
         public string premiered { get; set; }
+        public Schedule schedule { get; set; }
         public string image { get; set; }
         public string summary { get; set; }
 

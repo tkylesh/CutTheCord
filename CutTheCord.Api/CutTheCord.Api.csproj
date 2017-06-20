@@ -285,11 +285,20 @@
     <Compile Include="Migrations\201706201826218_June20_MemberEmail.Designer.cs">
       <DependentUpon>201706201826218_June20_MemberEmail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706202237527_Schedule.cs" />
+    <Compile Include="Migrations\201706202237527_Schedule.Designer.cs">
+      <DependentUpon>201706202237527_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706202247400_Schedule2.cs" />
+    <Compile Include="Migrations\201706202247400_Schedule2.Designer.cs">
+      <DependentUpon>201706202247400_Schedule2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\Schedule.cs" />
     <Compile Include="Models\Show.cs" />
     <Compile Include="DAL\Models\SearchImage.cs" />
     <Compile Include="DAL\Models\SearchNetwork.cs" />
@@ -404,6 +413,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706201826218_June20_MemberEmail.resx">
       <DependentUpon>201706201826218_June20_MemberEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706202237527_Schedule.resx">
+      <DependentUpon>201706202237527_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706202247400_Schedule2.resx">
+      <DependentUpon>201706202247400_Schedule2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
