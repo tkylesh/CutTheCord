@@ -23,16 +23,28 @@ namespace CutTheCord.Api.DAL
 
             foreach (var item in restResponse.Data)
             {
-                var s = new Show
+                var s = new SearchShow
                 {
+                    id = item.show.id,
                     url = item.show.url,
                     name = item.show.name,
                     type = item.show.type,
+                    language = item.show.language,
+                    genres = item.show.genres,
                     status = item.show.status,
+                    runtime = item.show.runtime,
                     premiered = item.show.premiered,
                     officialSite = item.show.officialSite,
-                    image = item.show.image != null ? item.show.image.imageUrl : "",
+                    schedule = item.show.schedule,
+                    rating = item.show.rating,
+                    weight = item.show.weight,
+                    network = item.show.network,
+                    webChannel = item.show.webChannel,
+                    externals = item.show.externals,
+                    image = item.show.image,
                     summary = item.show.summary,
+                    updated = item.show.updated,
+                    _links = item.show._links
                 };
 
                 yield return s;
