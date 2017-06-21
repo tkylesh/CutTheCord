@@ -23,6 +23,8 @@ namespace CutTheCord.Api.Models
     {
         public virtual DbSet<Member> Members { get; set; }
         public virtual DbSet<Show> Shows { get; set; }
+        public virtual DbSet<Schedule> Schedules { get; set; }
+
         public ApplicationDbContext()
             : base("CutTheCord", throwIfV1Schema: false)
         {
