@@ -14,6 +14,8 @@ namespace CutTheCord.Api.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public virtual ApplicationUser ApplicationUser { get; set; }
+
+        public virtual ICollection<Schedule> schedules{ get; set; }
         public virtual ICollection<Show> Shows { get; set; }
 
     }

@@ -14,6 +14,6 @@ namespace CutTheCord.Api.Models
         public string days { get; set; }
 
         public virtual IEnumerable<Show> shows { get; set; }
-        public virtual Member member { get; set; }
+        public virtual IEnumerable<Member> members { get; set; }
     }
 }

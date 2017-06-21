@@ -248,6 +248,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Controllers\ScheduleController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ShowController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -292,6 +293,22 @@
     <Compile Include="Migrations\201706202247400_Schedule2.cs" />
     <Compile Include="Migrations\201706202247400_Schedule2.Designer.cs">
       <DependentUpon>201706202247400_Schedule2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706202259111_Schedule3.cs" />
+    <Compile Include="Migrations\201706202259111_Schedule3.Designer.cs">
+      <DependentUpon>201706202259111_Schedule3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706202306188_Schedule4.cs" />
+    <Compile Include="Migrations\201706202306188_Schedule4.Designer.cs">
+      <DependentUpon>201706202306188_Schedule4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706202310521_Schedule5.cs" />
+    <Compile Include="Migrations\201706202310521_Schedule5.Designer.cs">
+      <DependentUpon>201706202310521_Schedule5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706202314017_Schedule6.cs" />
+    <Compile Include="Migrations\201706202314017_Schedule6.Designer.cs">
+      <DependentUpon>201706202314017_Schedule6.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -419,6 +436,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706202247400_Schedule2.resx">
       <DependentUpon>201706202247400_Schedule2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706202259111_Schedule3.resx">
+      <DependentUpon>201706202259111_Schedule3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706202306188_Schedule4.resx">
+      <DependentUpon>201706202306188_Schedule4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706202310521_Schedule5.resx">
+      <DependentUpon>201706202310521_Schedule5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706202314017_Schedule6.resx">
+      <DependentUpon>201706202314017_Schedule6.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
