@@ -28,12 +28,38 @@
                 console.log("retrieve member: ", result);
                 var days = angular.toJson(show.schedule.days);
                 var time = show.schedule.time;
+                var member = result.data;
+                var member2 = angular.toJson(result.data);
                 //var scheduleString = `${days}, ${time}`;
 
                 $http.post('api/show',
                     {
                         "show": show,
-                        "member": "test",
+                        "member":
+                            {
+                                "ApplicationUser": {
+                                    "Claims": [],
+                                    "Logins": [],
+                                    "Roles": [],
+                                    "Email": member.ApplicationUser.Email,
+                                    "EmailConfirmed": member.ApplicationUser.EmailConfirmed,
+                                    "PasswordHash": member.ApplicationUser.PasswordHash,
+                                    "SecurityStamp": member.ApplicationUser.SecurityStamp,
+                                    "PhoneNumber": null,
+                                    "PhoneNumberConfirmed": false,
+                                    "TwoFactorEnabled": false,
+                                    "LockoutEndDateUtc": null,
+                                    "LockoutEnabled": false,
+                                    "AccessFailedCount": 0,
+                                    "Id": member.ApplicationUser.Id,
+                                    "UserName": "taylor@gmail.com"
+                                },
+                                "Shows": [],
+                                "Id": member.Id,
+                                "Email": member.Email,
+                                "FirstName": member.FirstName,
+                                "LastName": member.LastName
+                            },
                         "schedule":
                             {
                                 "time": time,
