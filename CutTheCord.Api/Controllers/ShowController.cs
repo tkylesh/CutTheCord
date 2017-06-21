@@ -24,7 +24,7 @@ namespace CutTheCord.Api.Controllers
         }
 
         [Route("api/show")]
-        [HttpPut]
+        [HttpPost]
         public bool Add(AddShowRequest request)
         {
             var member = _context.Members.SingleOrDefault(m => m.Id == request.member.Id);
@@ -33,7 +33,7 @@ namespace CutTheCord.Api.Controllers
             {
                 try
                 {
-                    member.Shows.Add(request.show);
+                    member.Shows.Add(request.show);                    
                     _context.Members.Attach(member);
                     _context.Entry(member).State = System.Data.Entity.EntityState.Modified;
                     _context.SaveChanges();
@@ -45,8 +45,13 @@ namespace CutTheCord.Api.Controllers
                 }
             }
             else return false;
-            
-            
+        }
+
+        [Route("api/show")]
+        [HttpGet]
+        public Show Get(string name)
+        {
+            return _context.Shows.FirstOrDefault(s => s.name == name);
         }
     }
 }

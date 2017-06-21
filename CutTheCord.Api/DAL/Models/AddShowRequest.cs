@@ -10,5 +10,6 @@ namespace CutTheCord.Api.DAL.Models
     {
         public Show show { get; set; }
         public Member member { get; set; }
+        public Schedule schedule { get; set; }
     }
 }
