@@ -22,4 +22,9 @@
                 $location.path("/home");
             });
     };
+
+    $scope.logout = () => {
+        sessionStorage.clear('token');
+        sessionStorage.clear('user');
+    };
 }]);

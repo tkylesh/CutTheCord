@@ -17,9 +17,12 @@
 
     $scope.AddShow = (show) =>
     {
+        var memberEmail = sessionStorage.getItem("user");
+        console.log("user: ", memberEmail);
+
         var config = {
             params: {
-                "email": "taylor@gmail.com"
+                "email": memberEmail
             }
         };
 
@@ -29,8 +32,10 @@
                 var days = angular.toJson(show.schedule.days);
                 var time = show.schedule.time;
                 var member = result.data;
-                var member2 = angular.toJson(result.data);
-                console.log(member2);
+                var member2json = angular.toJson(result.data);
+                var memberStringify = JSON.stringify(result.data);
+                //console.log(member2json);
+                //console.log(memberStringify);
                 //var scheduleString = `${days}, ${time}`;
 
                 $http.post('api/show',

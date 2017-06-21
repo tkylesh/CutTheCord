@@ -28,23 +28,23 @@ namespace CutTheCord.Api.Controllers
         public bool AddSchedule(AddShowRequest request)
         {
             var member = _context.Members.SingleOrDefault(m => m.Id == request.member.Id);
-            var show = _context.Shows.FirstOrDefault(s => s.name == request.show.name);
+            //var show = _context.Shows.FirstOrDefault(s => s.name == request.show.name);
 
-            if (show != null)
-            {
+            //if (show != null)
+            //{
                 member.schedules.Add(request.schedule);
-                show.Schedules.Add(request.schedule);
+                //show.Schedules.Add(request.schedule);
 
                 _context.Members.Attach(member);
-                _context.Shows.Attach(show);
+                //_context.Shows.Attach(show);
 
                 _context.Entry(member).State = System.Data.Entity.EntityState.Modified;
-                _context.Entry(show).State = System.Data.Entity.EntityState.Modified;
+                //_context.Entry(show).State = System.Data.Entity.EntityState.Modified;
 
                 _context.SaveChanges();
                 return true;
-            }
-            else return false;
+            //}
+            //else return false;
         }
 
         [Route("api/schedule/{memberId}")]
@@ -53,7 +53,7 @@ namespace CutTheCord.Api.Controllers
         {
             var member = _context.Members.Find(memberId);
 
-            return member.schedules;
+            return member.schedules.ToArray();
         }
     }
 }

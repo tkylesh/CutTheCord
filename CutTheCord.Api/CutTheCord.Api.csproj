@@ -318,6 +318,10 @@
     <Compile Include="Migrations\201706211455395_removeShowMembers.Designer.cs">
       <DependentUpon>201706211455395_removeShowMembers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706211821227_schedule8.cs" />
+    <Compile Include="Migrations\201706211821227_schedule8.Designer.cs">
+      <DependentUpon>201706211821227_schedule8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -464,6 +468,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706211455395_removeShowMembers.resx">
       <DependentUpon>201706211455395_removeShowMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706211821227_schedule8.resx">
+      <DependentUpon>201706211821227_schedule8.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
