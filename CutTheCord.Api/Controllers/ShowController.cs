@@ -47,11 +47,13 @@ namespace CutTheCord.Api.Controllers
             else return false;
         }
 
-        [Route("api/show")]
+        [Route("api/show/{memberId}")]
         [HttpGet]
-        public Show Get(string name)
+        public IEnumerable<Show> GetShowsByMember(int memberId)
         {
-            return _context.Shows.FirstOrDefault(s => s.name == name);
+            var member = _context.Members.Find(memberId);
+            return member.Shows;
         }
+
     }
 }
