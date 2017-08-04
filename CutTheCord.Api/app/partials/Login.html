@@ -1,6 +1,27 @@
-﻿<div>
-    <input type="text" id="username" ng-model="username" />
-    <input type="password" id="password" ng-model="password" />
-    <button class="btn btn-default" ng-click="login()">Sign In</button>
-    <a href="#!/signup">Sign Up!</a>
+﻿
+<div class="col-md-6 col-md-offset-3">
+    <h2 style="margin-top:2em">Login</h2>
+    <form name="loginform" novalidate="novalidate" ng-submit="login()">
+        <div class="form-group">
+            <label>Username</label>
+            <input ng-model="username"
+                   type="text"
+                   class="form-control"
+                   required
+                   placeholder="email" />
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input ng-model="password"
+                   type="password"
+                   required
+                   class="form-control"
+                   placeholder="password" />
+        </div>
+        <button type="submit" class="btn btn-primary">
+            <span class="fa fa-sign-in"></span>
+            Log In
+        </button>
+        <a href="#!/signup" style="padding-left: 25%;">Sign Up!</a>
+    </form>
 </div>
