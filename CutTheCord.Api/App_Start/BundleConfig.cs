@@ -20,10 +20,19 @@ namespace CutTheCord.Api
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            //bundles.Add(new StyleBundle("~/Content/sweetalert").Include(
+            //          "~/Content/sweetalert/bootstrap-sweetalert.png",
+            //          "~/Content/sweetalert/thumbs-up.jpg")
+            //          .IncludeDirectory("~/Content/sweetalert","sweet-alert*",true));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/font-awesome.css",
+                      "~/Styles/sweetalert.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/sweetalert").Include(
+                    "~/Scripts/sweetalert.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                     "~/Scripts/angular.js",

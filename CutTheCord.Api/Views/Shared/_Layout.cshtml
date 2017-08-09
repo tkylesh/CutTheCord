@@ -26,6 +26,9 @@
                     <li><a href="/#!">Web Channels</a></li>
                     <li><a href="/#!">Calendar</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/#!">Logout</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -39,6 +42,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/sweetalert")
     @Scripts.Render("~/bundles/angular")
     @RenderSection("scripts", required: false)
 </body>
