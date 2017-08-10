@@ -319,6 +319,14 @@
     <Compile Include="Migrations\201706211455395_removeShowMembers.Designer.cs">
       <DependentUpon>201706211455395_removeShowMembers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708101759232_RemoveMemberFromSchedule.cs" />
+    <Compile Include="Migrations\201708101759232_RemoveMemberFromSchedule.Designer.cs">
+      <DependentUpon>201708101759232_RemoveMemberFromSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708101803481_RemoveSchedulesFromShow.cs" />
+    <Compile Include="Migrations\201708101803481_RemoveSchedulesFromShow.Designer.cs">
+      <DependentUpon>201708101803481_RemoveSchedulesFromShow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -476,6 +484,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706211455395_removeShowMembers.resx">
       <DependentUpon>201706211455395_removeShowMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708101759232_RemoveMemberFromSchedule.resx">
+      <DependentUpon>201708101759232_RemoveMemberFromSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708101803481_RemoveSchedulesFromShow.resx">
+      <DependentUpon>201708101803481_RemoveSchedulesFromShow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

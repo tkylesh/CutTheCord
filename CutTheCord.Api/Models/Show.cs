@@ -18,7 +18,5 @@ namespace CutTheCord.Api.Models
         public string image { get; set; }
         public string summary { get; set; }
 
-        public virtual ICollection<Schedule> Schedules { get; set; }
-
     }
 }
