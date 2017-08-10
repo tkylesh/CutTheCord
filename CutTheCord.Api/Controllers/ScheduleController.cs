@@ -33,7 +33,6 @@ namespace CutTheCord.Api.Controllers
             if (show != null)
             {
                 member.schedules.Add(request.schedule);
-                //show.Schedules.Add(request.schedule);
 
                 _context.Members.Attach(member);
                 _context.Shows.Attach(show);
