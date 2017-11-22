@@ -8,7 +8,7 @@
             text: "One moment please",
             timer: 3000,
             allowOutsideClick: false,
-            allowEscapeKey: false
+            allowEscapeKey: false 
         });
 
         $http({

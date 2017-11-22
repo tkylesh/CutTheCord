@@ -25,6 +25,11 @@ app
         {
             templateUrl: "app/partials/Search.html",
             controller: "searchController"
+        })
+        .when("/calendar",
+        {
+            templateUrl: "app/partials/Calendar.html",
+            controller: "calendarController"
         });
 
     }]);
